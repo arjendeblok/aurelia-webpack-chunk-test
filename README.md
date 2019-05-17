@@ -1,21 +1,11 @@
-# `aurelia-app`
-
-This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
-
-For more information, go to https://aurelia.io/docs/cli/webpack
+# `Aurelia WebPack Chunk Test`
 
 ## Run dev app
 
-Run `au run`, then open `http://localhost:5000`
+Run `npm install`;
 
-To open browser automatically, do `au run --open`.
+Run `dotnet run`, then open `http://localhost:5000` in your favorite browser;
 
-To change dev server port, do `au run --port 8888`.
+Open Developer Tools and open the Network Tab;
 
-To enable Webpack Bundle Analyzer, do `au run --analyze`.
-
-To enable hot module reload, do `au run --hmr`.
-
-## Build for production
-
-Run `au build --env prod`.
+Navigate to `#/test` and look that lodash and the Aurelia fetch client are loaded asynchronously.
