@@ -13,8 +13,8 @@ export class App {
     config.title = 'Title';
     console.debug("Configuring router");
     config.map([
-      { route: [''], name: 'home', moduleId: PLATFORM.moduleName("home/home", "app.home"), nav: true, title: 'Home' },
-      { route: ['test'], name: 'test', moduleId: PLATFORM.moduleName("test/test", "app.test"), nav: true, title: 'Test' }
+      { route: [''], name: 'home', moduleId: PLATFORM.moduleName("home/home", "app.async.home"), nav: true, title: 'Home' },
+      { route: ['test'], name: 'test', moduleId: PLATFORM.moduleName("test/test", "app.async.test"), nav: true, title: 'Test' }
     ]);
   }
 }
